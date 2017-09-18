@@ -38,8 +38,6 @@ mv src/main/java/org/sert2521/gamename src/main/java/org/sert2521/$GAME_NAME
 mv src/test/java/org/sert2521/gamename src/test/java/org/sert2521/$GAME_NAME
 
 git init -q
-git add . > /dev/null
-git commit -q -m "Initial commit"
 
 echo "Robot creation complete!"
 echo "Use \`git remote add origin <repo_url>\`, then push to GitHub."
