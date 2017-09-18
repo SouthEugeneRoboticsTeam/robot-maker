@@ -27,7 +27,7 @@ rm -rf .git
 
 sed -i "" "s/org\.sert2521\.gamename\.Robot/org\.sert2521\.$GAME_NAME\.Robot/g" build.gradle
 
-find src -type f -print0 | xargs -0 sed -i "" "s/org\.sert2521\.gamename/org\.sert2521\.$GAME_NAME/"
+find src -type f -print0 | xargs -0 sed -i "" "s/org\.sert2521\.gamename/org\.sert2521\.$GAME_NAME/g"
 
 mv src/main/java/org/sert2521/gamename src/main/java/org/sert2521/$GAME_NAME
 mv src/test/java/org/sert2521/gamename src/test/java/org/sert2521/$GAME_NAME
