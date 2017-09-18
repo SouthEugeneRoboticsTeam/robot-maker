@@ -8,6 +8,17 @@ have to do is push the code!
 
 _Only tested on macOS at the moment._
 
+## Installation
+
+If you use Robot Maker often enough to want it installed globally,
+copy the `robot-maker.sh` file to `/usr/local/bin/robot-maker`.
+
+```bash
+cp robot-maker.sh /usr/local/bin/robot-maker
+```
+
+Now you can use Robot Maker everywhere!
+
 ## Usage
 
 ```bash
