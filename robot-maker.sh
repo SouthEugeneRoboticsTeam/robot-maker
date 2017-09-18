@@ -1,3 +1,5 @@
+#!/bin/bash
+
 BASE_ROBOT_REPO=https://github.com/SouthEugeneRoboticsTeam/Robot-Base
 ROBOT_PATH=$1
 GAME_NAME=$(echo $2 | tr "[:upper:]" "[:lower:]") 
