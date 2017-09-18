@@ -14,7 +14,7 @@ If you use Robot Maker often enough to want it installed globally,
 copy the `robot-maker.sh` file to `/usr/local/bin/robot-maker`.
 
 ```bash
-cp robot-maker.sh /usr/local/bin/robot-maker
+$ cp robot-maker.sh /usr/local/bin/robot-maker
 ```
 
 Now you can use Robot Maker everywhere!
@@ -22,13 +22,13 @@ Now you can use Robot Maker everywhere!
 ## Usage
 
 ```bash
-./robot-maker.sh <path_to_robot> <game_name>
+$ ./robot-maker.sh <path_to_robot> <game_name>
 ```
 
 For example...
 
 ```bash
-./robot-maker.sh ../PowerUp-2018 PowerUp
+$ ./robot-maker.sh ../PowerUp-2018 PowerUp
 ```
 
 This command will create a new repository with all the robot code
