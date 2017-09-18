@@ -1,8 +1,23 @@
 #!/bin/bash
 
 BASE_ROBOT_REPO=https://github.com/SouthEugeneRoboticsTeam/Robot-Base
+
+print_usage() {
+  echo "Usage: robot-maker <path> <game_name>"
+}
+
+if [ "$1" == "-h" ]; then
+  print_usage
+  exit 0
+fi
+
 ROBOT_PATH=$1
 GAME_NAME=$(echo $2 | tr "[:upper:]" "[:lower:]") 
+
+if [ -z "$ROBOT_PATH" ] || [ -z "$GAME_NAME" ]; then
+  print_usage
+  exit 1
+fi
 
 git clone -q --depth=1 $BASE_ROBOT_REPO $ROBOT_PATH
 
