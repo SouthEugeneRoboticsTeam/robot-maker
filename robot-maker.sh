@@ -30,8 +30,11 @@ cd $ROBOT_PATH
 rm -rf .git
 
 # Replace references of base `gamename` with the actual $GAME_NAME
-sed -i "" "s/org\.sert2521\.gamename\.Robot/org\.sert2521\.$GAME_NAME\.Robot/g" build.gradle
-find src -type f -print0 | xargs -0 sed -i "" "s/org\.sert2521\.gamename/org\.sert2521\.$GAME_NAME/g"
+sed -i.bak "s/org\.sert2521\.gamename\.Robot/org\.sert2521\.$GAME_NAME\.Robot/g" build.gradle
+find src -type f -print0 | xargs -0 sed -i.bak "s/org\.sert2521\.gamename/org\.sert2521\.$GAME_NAME/g"
+
+# Remove backup files
+find . -type f -name "*.bak" -delete
 
 # Rename `gamename` directories to the actual $GAME_NAME
 mv src/main/java/org/sert2521/gamename src/main/java/org/sert2521/$GAME_NAME

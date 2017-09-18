@@ -6,7 +6,7 @@ game repositories super easy. It bases the new code off of the
 repository and updates everything that needs to be changed. All you
 have to do is push the code!
 
-_Only tested on macOS at the moment._
+_Only tested on macOS and Ubuntu 14.04 at the moment._
 
 ## Installation
 
