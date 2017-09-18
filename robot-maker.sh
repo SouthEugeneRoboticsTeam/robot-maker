@@ -2,13 +2,13 @@
 
 BASE_ROBOT_REPO=https://github.com/SouthEugeneRoboticsTeam/Robot-Base
 
-print_usage() {
-  echo "Usage: robot-maker <path> <game_name>"
+usage() {
+  echo "Usage: $(basename $0) <path> <game_name>"
 }
 
 # Check for `-h` option
 if [ "$1" == "-h" ]; then
-  print_usage
+  usage
   exit 0
 fi
 
@@ -17,7 +17,7 @@ GAME_NAME=$(echo $2 | tr "[:upper:]" "[:lower:]")
 
 # Verify that params are set
 if [ -z "$ROBOT_PATH" ] || [ -z "$GAME_NAME" ]; then
-  print_usage
+  usage
   exit 1
 fi
 
