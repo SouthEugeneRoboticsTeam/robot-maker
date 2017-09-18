@@ -11,13 +11,13 @@ _Only tested on macOS at the moment._
 ## Usage
 
 ```bash
-./robot-maker <path_to_robot> <game_name>
+./robot-maker.sh <path_to_robot> <game_name>
 ```
 
 For example...
 
 ```bash
-./robot-maker ../PowerUp-2018 PowerUp
+./robot-maker.sh ../PowerUp-2018 PowerUp
 ```
 
 This command will create a new repository with all the robot code
