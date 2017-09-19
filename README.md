@@ -22,14 +22,14 @@ Now you can use Robot Maker everywhere!
 ## Usage
 
 ```bash
-$ ./robot-maker.sh <path_to_robot> <game_name>
+$ robot-maker <path> <game_name>
 ```
 
 For example...
 
 ```bash
-$ ./robot-maker.sh ../PowerUp-2018 PowerUp
+$ robot-maker ../PowerUp-2018 PowerUp
 ```
 
-This command will create a new repository with all the robot code
-you'll need to get started.
+This command will create a new git-initialized directory with all the
+robot code you'll need to get started.
