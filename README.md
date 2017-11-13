@@ -20,14 +20,18 @@ Now you can use Robot Maker everywhere!
 ## Usage
 
 ```bash
-$ robot-maker <path> <game_name>
+$ robot-maker <path>
 ```
 
 For example...
 
 ```bash
-$ robot-maker ../PowerUp-2018 PowerUp
+$ robot-maker ../PowerUp-2018
 ```
 
 This command will create a new git-initialized directory with all the
-robot code you'll need to get started.
+robot code you'll need to get started. Make sure the directory that
+you're saving to follows the `GameName-Year` format, as shown above.
+Robot Maker will use the part before the dash as the game name, and
+the part after as the year. This is only used in generating the
+README and project file structure.
