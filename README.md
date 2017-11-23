@@ -26,7 +26,7 @@ $ robot-maker <path>
 For example...
 
 ```bash
-$ robot-maker ../PowerUp-2018
+$ robot-maker ./PowerUp-2018
 ```
 
 This command will create a new git-initialized directory with all the
