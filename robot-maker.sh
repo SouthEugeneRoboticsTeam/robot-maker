@@ -49,9 +49,9 @@ mv src/test/java/org/sert2521/gamename src/test/java/org/sert2521/$GAME_NAME_SM
 # Remove README and create new one from README_TEMPLATE
 rm README.md
 mv README_TEMPLATE.md README.md
-sed -i "s/{{name}}/$GAME_NAME/g" README_TEMPLATE.md
-sed -i "s/{{name_full}}/$GAME_NAME_FULL/g" README_TEMPLATE.md
-sed -i "s/{{year}}/$YEAR/g" README_TEMPLATE.md
+sed -i "" "s/{{name}}/$GAME_NAME/g" README.md
+sed -i "" "s/{{name_full}}/$GAME_NAME_FULL/g" README.md
+sed -i "" "s/{{year}}/$YEAR/g" README.md
 
 git init -q
 
