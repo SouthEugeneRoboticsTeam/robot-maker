@@ -44,7 +44,6 @@ find . -type f -name "*.bak" -delete
 
 # Rename `gamename` directories to the actual $GAME_NAME
 mv src/main/java/org/sert2521/gamename src/main/java/org/sert2521/$GAME_NAME_SM
-mv src/test/java/org/sert2521/gamename src/test/java/org/sert2521/$GAME_NAME_SM
 
 # Remove README and create new one from README_TEMPLATE
 rm README.md
