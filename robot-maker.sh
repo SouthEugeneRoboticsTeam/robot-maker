@@ -36,7 +36,7 @@ cd $ROBOT_PATH
 rm -rf .git
 
 # Replace references of base `gamename` with the actual $GAME_NAME
-sed -i.bak "s/org\.sert2521\.gamename\.Robot/org\.sert2521\.$GAME_NAME_SM\.Robot/g" build.gradle
+sed -i.bak "s/org\.sert2521\.gamename/org\.sert2521\.$GAME_NAME_SM/g" build.gradle
 find src -type f -print0 | xargs -0 sed -i.bak "s/org\.sert2521\.gamename/org\.sert2521\.$GAME_NAME_SM/g"
 
 # Remove backup files
@@ -44,7 +44,6 @@ find . -type f -name "*.bak" -delete
 
 # Rename `gamename` directories to the actual $GAME_NAME
 mv src/main/java/org/sert2521/gamename src/main/java/org/sert2521/$GAME_NAME_SM
-mv src/test/java/org/sert2521/gamename src/test/java/org/sert2521/$GAME_NAME_SM
 
 # Remove README and create new one from README_TEMPLATE
 rm README.md
